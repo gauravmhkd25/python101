@@ -1,0 +1,14 @@
+The Unix os works in a tree fashion, where / (root directory) is the parent directory above which lies no directory
+command                          discription
+
+mkdir <filename>		 makes a new directory
+cat <filename> >>		 makes a new file
+rmdir <filename>		 removing a directory
+rm  <filename>        		 removing a file, '-i' used for iterative removal in the directory 
+cd <directory name> 		 changing directory 
+cd ..  				 going to the parent directory 
+ls 				 listing files and directories with the current directory 
+pwd				 shows the present working directory
+mv dir/filename	filename	 move the file from dir to current directory, also used for renaming
+cp dir/filename filename	 copy the file from dir to current directory
+
