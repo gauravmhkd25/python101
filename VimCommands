@@ -1,0 +1,33 @@
+vim is a Vi editor which is used to store texts 
+
+To start Vi editor the command 'vi <filename>' is used or just 'vi'
+There are 3 modes in vi editor: 1) input 2) command 3) ex/lastline(command to terminate vi)
+By default the vi editor is in command mode and to insert a charecter command 'i' is used
+and there after every letter is recieved as a character. To switch from input mode to command
+mode 'esc' is used. The following are the single letter commands that are used to input/modify
+in the editor.
+
+command					description
+ i--------------------------------------insert before cursor position
+ I--------------------------------------insert at the begining of the line
+ a--------------------------------------append after cursor position
+ A--------------------------------------append at the end of the line
+
+ r--------------------------------------replace a character after the cursor and stop
+ R--------------------------------------replace a character after cursor and keep changing towards right until 'esc'
+ s--------------------------------------replace a character with multiple character
+ S--------------------------------------replace the whole line with new sset of characters
+ o--------------------------------------open a new line after the current line
+ O--------------------------------------open a new line before the current line
+ 
+To exit from the vi editor the following commands can be used
+
+command					description
+ :w-------------------------------------write
+ :q-------------------------------------quit
+ :q!------------------------------------quit override
+ :wq------------------------------------write and quit
+ :wq!-----------------------------------write and quit override
+ :recover-------------------------------recover
+ :!cmd----------------------------------open command prompt as child process
+
