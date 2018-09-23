@@ -33,4 +33,4 @@ print(name,",Who is",age,"years old, is",height,'m tall and his USN is equal to 
 #output:  Gaurav ,Who is 22 years old, is 1.74 m tall and his USN is equal to his age i.e. 22
 
 print("Here the adress allocated to '\033[1;32;40m usn\033[0m' is: \033[1;32;40m %s\033[0m"%(id(usn)),"same as '\033[1;32;40m age\033[0m' because they both contain the same value and hence no new address is allocated")
-#output: Here the adress allocated to ' usn' is:  1658210272 same as ' age' because they both contain the same value and hence no new address is allocated.
+#output: Here the adress allocated to ' usn' is:  1658210272 same as ' age' because they both contain the same value and hence no new  address is allocated.
