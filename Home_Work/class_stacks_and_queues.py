@@ -114,6 +114,54 @@ if __name__=='__main__':
                
         x=int(input("\n\nfor enqueue opperation, enter the new element: "))
         q.enque(x)
+   
+
+*****************************************************************************************************************************************
+#results:
+####Stacks:✔
+in[]: $ py class_stacks_and_queues.py --Stacks 100,200,300,400,500,600
+
+out[]:
+#*******Performing stack operations********
+# ***************************************
+#arguments                stack
+#   |100|                    |600|
+#   |200|                    |500|
+#   |300|                    |400|
+#   |400|                    |300|
+#   |500|                    |200|
+#   |600|                    |100|
+#    |_stack operation LIFO_|
+
+#peeking:
+#stack is not empty as bottom is:  100
+
+#popping an element from top: 600
+
+#now top of the stack is: 500
+
+#for push operation, enter the new element: 800
+#top-->|800|
+#      |500|
+#      |400|
+#      |300|
+#      |200|
+#      |100|
+
+####Queues:✔
+in[]:  $ py class_stacks_and_queues.py --Queues 100,200,300,400,500,600
+
+out[]:
+#*******Performing queue operations********
+# ****************************************
+#arguments themselves form the queue: 100 | 200 | 300 | 400 | 500 | 600 |
+
+#front of the queue has: 100
+#removed from front: 100, remaining q:  200 | 300 | 400 | 500 | 600 |
+
+#for enqueue opperation, enter the new element: 500
+#The new queue is:                    200 | 300 | 400 | 500 | 600 | 500 |
+
     
         
     
