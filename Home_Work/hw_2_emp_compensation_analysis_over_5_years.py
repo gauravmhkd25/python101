@@ -3,6 +3,7 @@
 Created on Wed Nov 14 12:03:05 2018
 
 @author: MAHAKUD
+✔results in the end.
 """
 import csv
 from operator import itemgetter
@@ -156,9 +157,7 @@ class File:
         ## DS3 4 JOBCODE : PERCENTAGE
         for k,v in salary.items():
             salPer.update({k:round((v/self.tsal)*100,2)})
-        
-        
-            
+       
         ## DS3 5 WRITE TO csv
         res=[]
         ke = [k for k in jobType.keys()]
@@ -239,3 +238,32 @@ if __name__ == '__main__':
     f_obj.dataSet2()
     f_obj.dataSet3()
     f_obj.dataSet4()
+#______________________________________________________________________________________________________________________________________    
+
+#RESULTS:
+total: $13606250628.080559
+
+#dataSet1() top 3 rows
+code,   Dept name,                      salary,            percentage
+'DPH', 'DPH Public Health',             $2990154748.34007, 21.98
+'MTA', 'MTA Municipal Transprtn Agncy', $1810552837.45,    13.31
+'POL', 'POL Police',                    $1515834269.18998, 11.14
+    
+#dataSet2() top 3 rows
+code,  job family,        salary,           percentage
+2300', 'Nursing',         $1441086702.34999, 10.59
+Q000', 'Police Services', $1323814026.71998, 9.73
+9100', 'Street Transit',  $978216004.28,     7.19
+
+
+#dataSet3() top 3 rows
+code,  job type,          salary,       percentage
+2320, 'Registered Nurse', $687417136.27, 5.05 
+9163, 'Transit Operator', $658696281.56, 4.84
+H002, 'Firefighter',      $415373399.08, 3.05
+
+#dataSet4()
+row count: {'2013': 39476, '2014': 40868, '2016': 44087, '2015': 43078, '2017': 45693}
+total salary: {'2013': $2482092311.49996, '2014': $2530299989.71002, '2016': $2860081866.78004, '2015': $2669495274.45004, '2017': $3064281185.64009}
+percentage of salary allocated: {'2013': 18.24, '2014': 18.6, '2016': 21.02, '2015': 19.62, '2017': 22.52}
+    
